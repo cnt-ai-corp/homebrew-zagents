@@ -5,21 +5,21 @@
 class Zagents < Formula
   desc "ZAgents CLI — local agent runtime and management tool (Multica fork)"
   homepage "https://github.com/cnt-ai-corp/multica"
-  version "0.12.0-mz.1"
+  version "0.12.0-mz.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.1/zagents-cli-0.12.0-mz.1-darwin-amd64.tar.gz"
-      sha256 "57a49e59d2e4d0dede6f24b17f542b82b17623b866121a393584775cdcf652f8"
+      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.2/zagents-cli-0.12.0-mz.2-darwin-amd64.tar.gz"
+      sha256 "458a9e2ff79a0edc5fc579eaf5d8c57047f73e1596d3dbe8700b6e72ba647fb8"
 
       define_method(:install) do
         bin.install "zagents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.1/zagents-cli-0.12.0-mz.1-darwin-arm64.tar.gz"
-      sha256 "57b0c5be4206c907d5b6096dca8a240a9d5a35bed66124b8c7bbe2621b739357"
+      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.2/zagents-cli-0.12.0-mz.2-darwin-arm64.tar.gz"
+      sha256 "73e0d68fcb3b28d1367da42cccd436b55ae53ecfa00bc9113eddda9e0de42cc7"
 
       define_method(:install) do
         bin.install "zagents"
@@ -29,15 +29,15 @@ class Zagents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.1/zagents-cli-0.12.0-mz.1-linux-amd64.tar.gz"
-      sha256 "6e57bbaa49f008880ba8e89beee1cdcd3147e866aa6fc2503e521116219b148e"
+      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.2/zagents-cli-0.12.0-mz.2-linux-amd64.tar.gz"
+      sha256 "ddb50cfeb88a636512dab897750e44c7e5f72b318cc0d10f64f5c5424627003e"
       define_method(:install) do
         bin.install "zagents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.1/zagents-cli-0.12.0-mz.1-linux-arm64.tar.gz"
-      sha256 "c7eec01604776f21c5b70fd571fec223b79d049d8866376ba5a4833dfc6bd647"
+      url "https://github.com/cnt-ai-corp/zagents-releases/releases/download/v0.12.0-mz.2/zagents-cli-0.12.0-mz.2-linux-arm64.tar.gz"
+      sha256 "f46404638e0e1706a2cdbb1833357e5e547ed49f6da3d50a370f28538620b7cf"
       define_method(:install) do
         bin.install "zagents"
       end
